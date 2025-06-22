@@ -3,78 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Humboldt County Empowerment Network</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 text-gray-900 font-sans">
+  <title>HCEN – Humboldt County Empowerment Network</title>
 
-  <header class="bg-gray-900 text-white text-center py-6">
-    <h1 class="text-3xl font-bold">Humboldt County Empowerment Network</h1>
-    <p class="mt-2 text-sm">Support, Safety, and Solidarity</p>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .hero-bg {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('redwoods.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 font-sans leading-relaxed">
+
+  <!-- Hero Section with Redwoods Background -->
+  <header class="hero-bg text-white text-center py-20 px-4">
+    <div class="max-w-3xl mx-auto">
+      <!-- TODO: Add logo here when ready -->
+      <h1 class="text-4xl font-bold mb-4 drop-shadow">Humboldt County Empowerment Network</h1>
+      <p class="text-lg opacity-90">Support. Safety. Solidarity.</p>
+    </div>
   </header>
 
-  <main class="max-w-3xl mx-auto px-4 py-8 space-y-8">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center text-sm">
+      <strong class="text-blue-700">HCEN</strong>
+      <div class="space-x-4">
+        <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+        <a href="#story" class="text-gray-600 hover:text-blue-600">Why It Exists</a>
+        <a href="#tools" class="text-gray-600 hover:text-blue-600">Tools</a>
+        <a href="#resources" class="text-gray-600 hover:text-blue-600">Resources</a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">About HCEN</h2>
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto px-4 py-12 space-y-16">
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="text-2xl font-semibold mb-4">About HCEN</h2>
       <p>
-        The Humboldt County Empowerment Network (HCEN) is a grassroots safety and resource hub built in memory of loved ones who faced violence, addiction, and systemic neglect.
-        This project was created out of friendship, survival, and a commitment to reducing harm. HCEN offers tools and support for people in high-risk situations like sex work, domestic violence, homelessness, and drug use.
+        The Humboldt County Empowerment Network (HCEN) is a grassroots support and safety project built from lived experience and love. It began in Humboldt, shaped by the realities of survival, violence, addiction, and healing.
+      </p>
+      <p class="mt-2">
+        HCEN is not an institution — it's a set of tools made by someone who lived through it, for others still walking the same path. It exists to make people feel less alone and more prepared.
       </p>
     </section>
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">What We Offer</h2>
-      <ul class="list-disc pl-5 space-y-2">
-        <li>📍 <strong>Bad Date Database</strong> – <a href="#" class="text-blue-600 underline">View or Submit Reports</a></li>
-        <li>🚨 <strong>Emergency SOS Button</strong> – <a href="#" class="text-blue-600 underline">Try the SOS Tool</a></li>
-        <li>🧠 <strong>Referral Network</strong> – <a href="#" class="text-blue-600 underline">Browse Local Resources</a></li>
-        <li>🔐 <strong>Safety Reviews</strong> – <a href="#" class="text-blue-600 underline">Contribute or Read Safety Info</a></li>
-        <li>💡 <strong>Tech & Wellness Toolkit</strong> – <a href="#" class="text-blue-600 underline">See Apps & Tools</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Our Vision</h2>
+    <!-- Why It Exists / Memorial Section -->
+    <section id="story" class="bg-gray-50 p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">Built From Love</h2>
       <p>
-        HCEN was created in memory of people who deserved better—people who were loved and should still be here. We believe in tools that empower people to stay safe, get help, and feel less alone.
-        This work is grounded in real experiences, not institutions. It’s about practical compassion and community.
+        This project is dedicated to someone who meant everything to me — someone I lost too soon. She had fire and honesty and strength in a world that tried to erase her. This is for her, and for the people like her still here.
+      </p>
+      <p class="mt-2">
+        I won’t use her name. Her family deserves peace, and her story is sacred. What I can do is build something that keeps others safe — something that honors the survival, the love, and the pain that created it.
       </p>
     </section>
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Local Help & Emergency Resources</h2>
-      <ul class="list-disc pl-5 space-y-1">
-        <li><strong>Humboldt DV Services</strong> – <a href="https://hdvs.org" target="_blank" class="text-blue-600 underline">hdvs.org</a></li>
-        <li><strong>North Coast Rape Crisis</strong> – (707) 445-2881 – <a href="https://ncrct.org" target="_blank" class="text-blue-600 underline">ncrct.org</a></li>
-        <li><strong>Arcata House Partnership</strong> – <a href="https://arcatahouse.org" target="_blank" class="text-blue-600 underline">arcatahouse.org</a></li>
-        <li><strong>HACHR</strong> – <a href="https://hachr707.org" target="_blank" class="text-blue-600 underline">hachr707.org</a></li>
-        <li><strong>Open Door Health</strong> – <a href="https://opendoorhealth.com" target="_blank" class="text-blue-600 underline">opendoorhealth.com</a></li>
+    <!-- Tools Section -->
+    <section id="tools">
+      <h2 class="text-2xl font-semibold mb-4">Tools for Safety & Survival</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>📍 Bad Date Database</strong> – A community-powered alert system to warn about dangerous people or situations.</li>
+        <li><strong>🚨 SOS Button</strong> – An emergency tool that sends your location to someone you trust.</li>
+        <li><strong>🧠 Referral Network</strong> – A directory of local resources for housing, health, legal aid, and more.</li>
+        <li><strong>🔐 Safety Reviews</strong> – Anonymous reviews that help people avoid harm and share trusted places or people.</li>
+        <li><strong>💡 Tech & Wellness Toolkit</strong> – Curated apps and tools for staying safe, sober, and connected.</li>
       </ul>
     </section>
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Apps & Tech Tools</h2>
-      <ul class="list-disc pl-5 space-y-1">
-        <li>📱 <strong>MyPlan App</strong> – Domestic violence safety planning</li>
-        <li>🛡️ <strong>Signal</strong> – Private encrypted messaging</li>
-        <li>🔄 <strong>Sober Grid</strong> – Peer support for addiction recovery</li>
-        <li>🧘 <strong>Pocket Rehab</strong> – 24/7 recovery community</li>
-        <li>📍 <strong>FindHelp.org</strong> – Local help based on ZIP code</li>
+    <!-- Local Resources -->
+    <section id="resources" class="bg-white p-6 rounded-lg shadow">
+      <h2 class="text-2xl font-semibold mb-4">Local Help & Emergency Contacts</h2>
+      <ul class="list-disc pl-6 space-y-2 text-sm">
+        <li><strong>Humboldt DV Services</strong> – <a href="https://hdvs.org" class="text-blue-600 underline" target="_blank">hdvs.org</a></li>
+        <li><strong>North Coast Rape Crisis</strong> – (707) 445-2881 – <a href="https://ncrct.org" class="text-blue-600 underline" target="_blank">ncrct.org</a></li>
+        <li><strong>Arcata House Partnership</strong> – <a href="https://arcatahouse.org" class="text-blue-600 underline" target="_blank">arcatahouse.org</a></li>
+        <li><strong>HACHR</strong> – <a href="https://hachr707.org" class="text-blue-600 underline" target="_blank">hachr707.org</a></li>
+        <li><strong>Open Door Health</strong> – <a href="https://opendoorhealth.com" class="text-blue-600 underline" target="_blank">opendoorhealth.com</a></li>
       </ul>
     </section>
 
-    <section>
-      <h2 class="text-xl font-semibold mb-2">Contact & Support</h2>
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="text-2xl font-semibold mb-4">Support HCEN</h2>
       <p>Email: <a href="mailto:abarrbillie23@gmail.com" class="text-blue-600 underline">abarrbillie23@gmail.com</a></p>
-      <p>Donate: <a href="https://www.paypal.com/paypalme/abarrbillie23" target="_blank" class="text-blue-600 underline">PayPal</a> (mention “HCEN”)</p>
+      <p>Donate: <a href="https://www.paypal.com/paypalme/abarrbillie23" class="text-blue-600 underline" target="_blank">PayPal.me/abarrbillie23</a></p>
     </section>
-
   </main>
 
-  <footer class="text-center text-xs text-gray-500 py-6 border-t border-gray-300">
+  <!-- Sticky Donate Button (Mobile Only) -->
+  <a href="https://www.paypal.com/paypalme/abarrbillie23"
+     target="_blank"
+     class="fixed bottom-4 right-4 bg-blue-600 text-white px-5 py-3 rounded-full shadow-lg text-sm hover:bg-blue-700 transition sm:hidden">
+    Donate
+  </a>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-xs py-6 border-t mt-10">
     © 2025 Humboldt County Empowerment Network
   </footer>
-
 </body>
 </html>
